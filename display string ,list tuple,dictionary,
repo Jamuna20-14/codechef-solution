@@ -1,0 +1,27 @@
+s = input("Enter a String: ")
+
+l = input("Enter List Elements: ").split()
+
+t = tuple(input("Enter Tuple Elements: ").split())
+
+key = input("Enter Dictionary Key: ")
+value = input("Enter Dictionary Value: ")
+
+d = {key: value}
+
+print("\nString:", s)
+print("List:", l)
+print("Tuple:", t)
+print("Dictionary:", d)
+
+o/p:
+Enter a String: jodha
+Enter List Elements: 10 20 30
+Enter Tuple Elements: anu bob charu
+Enter Dictionary Key: name
+Enter Dictionary Value: mona
+
+String: jodha
+List: ['10', '20', '30']
+Tuple: ('anu', 'bob', 'charu')
+Dictionary: {'name': 'mona'}
