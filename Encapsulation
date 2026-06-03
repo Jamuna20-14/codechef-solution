@@ -1,0 +1,24 @@
+class Student:
+    def __init__(self):
+        self.name = "Arun"      
+        self._course = "Python"   
+        self.__marks = 95         # Private
+
+    def display(self):
+        print("Name:", self.name)
+        print("Course:", self._course)
+        print("Marks:", self.__marks)
+
+obj = Student()
+
+print("Public:", obj.name)
+print("Protected:", obj._course)
+
+obj.display()
+
+o/p:
+Public: Arun
+Protected: Python
+Name: Arun
+Course: Python
+Marks: 95
