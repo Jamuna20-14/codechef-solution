@@ -1,0 +1,25 @@
+size = int(input("Enter size: "))
+
+numbers = []
+
+for i in range(size):
+    num = int(input("Enter number: "))
+    numbers.append(num)
+
+numbers.sort()
+
+print("Ascending Order:")
+for num in numbers:
+    print(num, end=" ")
+
+
+o/p:
+Enter size: 6
+Enter number: 45
+Enter number: 37
+Enter number: 60
+Enter number: 10
+Enter number: 2
+Enter number: 53
+Ascending Order:
+2 10 37 45 53 60 
