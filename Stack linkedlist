@@ -1,0 +1,48 @@
+class Stack:
+    def __init__(self):
+        self.items = []
+        
+    def push(self, item):
+        self.items.append(item)
+        
+    def pop(self):
+        if not self.is_empty():
+            return self.items.pop()
+        raise IndexError("Cannot pop from an empty stack: ")
+        
+    def is_empty(self):
+        return len(self.items) == 0
+        
+    def display(self):
+        print("Stack items:" , self.items)
+        
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1]
+        raise indexError("Stack is empty:")
+        
+stack = Stack()
+
+stack.push(10)
+stack.push(20)
+stack.push(30)
+
+stack.display()
+
+print("Popped:", stack.pop())
+
+stack.display()
+
+print("Top element:", stack.peek())
+
+stack.display()
+
+print("Top element:", stack.peek())
+
+o/p:
+Stack items: [10, 20, 30]
+Popped: 30
+Stack items: [10, 20]
+Top element: 20
+Stack items: [10, 20]
+Top element: 20
