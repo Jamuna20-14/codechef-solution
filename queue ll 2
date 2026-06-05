@@ -1,0 +1,25 @@
+from collections import deque
+
+q = deque()
+
+q.append('a')
+q.append('b')
+q.append('c')
+
+print("Initial queue:", q)
+
+print("Elements dequeued from the queue:")
+print(q.popleft())
+print(q.popleft())
+print(q.popleft())
+
+print("Queue after removing elements:", q)
+
+o/p:
+Initial queue: deque(['a', 'b', 'c'])
+Elements dequeued from the queue:
+a
+b
+c
+Queue after removing elements: deque([])
+
